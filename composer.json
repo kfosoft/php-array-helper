@@ -1,0 +1,24 @@
+{
+    "name": "turkevich/php-array-helper",
+    "description": "PHP Array Helper",
+    "keywords": [
+        "php",
+        "php array",
+        "php array helper",
+        "array",
+        "array helper"
+    ],
+    "type": "library",
+    "authors": [
+        {
+            "name": "Cyril Turkevich",
+            "email": "cyril.turkevich@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {"ctur\\": ""}
+    }
+}

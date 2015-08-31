@@ -1,5 +1,5 @@
 {
-    "name": "turkevich/php-array-helper",
+    "name": "kfosoft/php-array-helper",
     "description": "PHP Array Helper",
     "keywords": [
         "php",
@@ -19,6 +19,6 @@
         "php": ">=5.4.0"
     },
     "autoload": {
-        "psr-4": {"ctur\\": ""}
+        "psr-4": {"kfosoft\\": ""}
     }
 }

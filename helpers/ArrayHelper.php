@@ -1,10 +1,11 @@
 <?php
-namespace ctur\helpers;
+namespace kfosoft\helpers;
 
 /**
  * Array Helper static class.
- * @package ctur\helpers
- * @author Cyril Turkevich
+ * @package kfosoft\helpers
+ * @version 1.0
+ * @copyright (c) 2014-2015 KFOSoftware Team <kfosoftware@gmail.com>
  */
 class ArrayHelper
 {

@@ -4,7 +4,7 @@ namespace kfosoft\helpers;
 /**
  * Array Helper static class.
  * @package kfosoft\helpers
- * @version 1.0
+ * @version 1.0.1
  * @copyright (c) 2014-2015 KFOSoftware Team <kfosoftware@gmail.com>
  */
 class ArrayHelper
@@ -70,5 +70,23 @@ class ArrayHelper
         }
 
         return $difference;
+    }
+
+    /**
+     * Returns nearest array key.
+     * @see http://php.net/manual/en/function.array-search.php
+     * @param string|int $needle needle.
+     * @param array $haystack haystack.
+     * @return null|int|string nearest array key.
+     */
+    public static function rSearch($needle, array $haystack)
+    {
+        foreach ($haystack as $key => $value) {
+            $current_key = $key;
+            if ($needle === $value || (is_array($value) && self::rSearch($needle, $value) !== null)) {
+                return $current_key;
+            }
+        }
+        return null;
     }
 }
